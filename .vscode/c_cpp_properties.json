@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/dey/2.4-r3/sysroots/cortexa9hf-neon-dey-linux-gnueabi/usr/local/qt5/include/**",
+                "/opt/dey/2.4-r3/sysroots/cortexa9hf-neon-dey-linux-gnueabi/usr/local/qt5/include/**",                
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64"
+        }
+    ],
+    "version": 4
+}

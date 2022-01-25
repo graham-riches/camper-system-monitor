@@ -37,8 +37,8 @@ set(BINARY ${PROJECT_NAME})
 #--------------------------------------------------------------------------------
 # set the source files
 set(SOURCES   
-   ${CMAKE_SOURCE_DIR}/source/main.cpp
-   ${CMAKE_SOURCE_DIR}/source/mainwindow.cpp
+   ${CMAKE_SOURCE_DIR}/source/main.cpp   
+   ${CMAKE_SOURCE_DIR}/source/main_window.cpp
 )
 
 # Additional QT resources
@@ -54,6 +54,7 @@ add_executable(${BINARY} ${SOURCES} ${QT_CUSTOM_RESOURCES})
 # Set the include paths
 target_include_directories( ${BINARY} PRIVATE   
    ${CMAKE_SOURCE_DIR}/source
+   ${CMAKE_SOURCE_DIR}/include
 )
 
 #--------------------------------------------------------------------------------

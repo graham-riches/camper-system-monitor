@@ -12,7 +12,7 @@ help:                                       ## Show this help.
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
 $(BUILD_DIR)/CMakeCache.txt:
-	$(CMAKE) -B $(BUILD_DIR) -S . -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=$(TOOLCHAIN) -DCMAKE_EXPORT_COMPILE_COMMANDS=1
+	$(CMAKE) -B $(BUILD_DIR) -S . -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=$(TOOLCHAIN) -DCMAKE_EXPORT_COMPILE_COMMANDS=1
 
 .PHONY: build
 build: $(BUILD_DIR)/CMakeCache.txt          ## Cross-compile the main binary
