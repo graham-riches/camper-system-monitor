@@ -1,0 +1,14 @@
+#! /bin/sh
+case "$1" in
+    start)
+        echo "Starting xrandr for WaveShare"
+        sh /home/system_monitor/setup-graphics.sh
+        ;;
+    stop)        
+        sh /home/system_monitor/setup-graphics.sh
+        ;;
+    *)
+    echo "Usage: $0 {start|stop}"
+exit 1
+esac
+exit 0

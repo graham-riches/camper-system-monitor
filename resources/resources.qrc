@@ -1,0 +1,8 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource>
+        <file>images/logo.png</file>
+    </qresource>
+    <qresource>
+        <file>fonts/Roboto-Medium.ttf</file>
+    </qresource>    
+</RCC>
