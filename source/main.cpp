@@ -10,17 +10,16 @@
  */
 
 /********************************** Includes *******************************************/
-#include "main_window.h"
 #include <QApplication>
-#include <QFontDatabase>
+#include <QQmlApplicationEngine>
 
 /********************************** Function Definitions *******************************************/
 /**
  * \brief Main application entry point
  */
-int main(int argc, char* argv[]) {
-    QApplication application(argc, argv);            
-    main_window window;                
-    window.showFullScreen();
-    return application.exec();
+int main(int argc, char** argv) {
+    QApplication app(argc, argv);
+    QQmlApplicationEngine engine;
+    engine.load(QUrl(QStringLiteral("main.qml")));
+    return app.exec();
 }

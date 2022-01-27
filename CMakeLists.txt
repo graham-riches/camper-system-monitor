@@ -18,7 +18,7 @@ set(CMAKE_NO_SYSTEM_FROM_IMPORTED ON)
 get_filename_component(PARENT_DIR ${CMAKE_SOURCE_DIR} DIRECTORY)
 
 #--------------------------------------------------------------------------------
-find_package(Qt5 COMPONENTS Widgets REQUIRED)
+find_package(Qt5 COMPONENTS Widgets Qml Quick REQUIRED)
 #find_package(Threads REQUIRED)
 
 set(CMAKE_AUTOMOC ON)
@@ -44,6 +44,7 @@ set(SOURCES
 # Additional QT resources
 set(QT_CUSTOM_RESOURCES
     ${CMAKE_SOURCE_DIR}/resources/resources.qrc
+    ${CMAKE_SOURCE_DIR}/source/qml.qrc
 )
 
 #--------------------------------------------------------------------------------
@@ -109,6 +110,11 @@ target_compile_definitions(${BINARY} PRIVATE
 
 #--------------------------------------------------------------------------------
 # set the linker options and libraries
-target_link_libraries(${BINARY} -static-libstdc++ -static-libgcc -pthread Qt5::Widgets)
-
-
+target_link_libraries(${BINARY} 
+    -static-libstdc++ 
+    -static-libgcc 
+    -pthread 
+    Qt5::Widgets
+    Qt5::Qml
+    Qt5::Quick
+)
