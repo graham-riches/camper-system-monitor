@@ -37,8 +37,7 @@ set(BINARY ${PROJECT_NAME})
 #--------------------------------------------------------------------------------
 # set the source files
 set(SOURCES   
-   ${CMAKE_SOURCE_DIR}/source/main.cpp   
-   ${CMAKE_SOURCE_DIR}/source/main_window.cpp
+   ${CMAKE_SOURCE_DIR}/source/main.cpp      
 )
 
 # Additional QT resources

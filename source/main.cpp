@@ -20,6 +20,6 @@
 int main(int argc, char** argv) {
     QApplication app(argc, argv);
     QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("main.qml")));
+    engine.load(QUrl(QStringLiteral("Main.qml")));
     return app.exec();
 }
