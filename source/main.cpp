@@ -12,14 +12,15 @@
 /********************************** Includes *******************************************/
 #include <QApplication>
 #include <QQmlApplicationEngine>
+#include <QIcon>
 
 /********************************** Function Definitions *******************************************/
 /**
  * \brief Main application entry point
  */
 int main(int argc, char** argv) {
-    QApplication app(argc, argv);
+    QApplication app(argc, argv);        
     QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("Main.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:/qml/Main.qml")));
     return app.exec();
 }

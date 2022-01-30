@@ -1,6 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.0
-import "."
+import "." as Components
 
 ApplicationWindow {
     visible: true
@@ -8,7 +8,7 @@ ApplicationWindow {
     width: 800
     height: 480
 
-    MainView {
+    Components.MainView {
 
     }
 

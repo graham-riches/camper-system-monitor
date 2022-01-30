@@ -41,9 +41,8 @@ set(SOURCES
 )
 
 # Additional QT resources
-set(QT_CUSTOM_RESOURCES
-    ${CMAKE_SOURCE_DIR}/resources/resources.qrc
-    ${CMAKE_SOURCE_DIR}/source/qml.qrc
+set(QT_CUSTOM_RESOURCES    
+    ${CMAKE_SOURCE_DIR}/source/qml/qml.qrc    
 )
 
 #--------------------------------------------------------------------------------

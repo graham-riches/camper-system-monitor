@@ -20,7 +20,9 @@ build: $(BUILD_DIR)/CMakeCache.txt          ## Cross-compile the main binary
 
 .PHONY: build-and-load
 build-and-load: $(BUILD_DIR)/CMakeCache.txt ## Cross-compile the main binary and upload over SCP
-	make -j4 -C $(BUILD_DIR) --no-print-directory && scp build/system-monitor root@192.168.1.40:/home/system_monitor/system_monitor && scp source/*.qml root@192.168.1.40:/home/system_monitor
+	make -j4 -C $(BUILD_DIR) --no-print-directory \
+	&& scp build/system-monitor root@192.168.1.40:/home/system_monitor/system_monitor \
+	&& scp -r source/qml root@192.168.1.40:/home/system_monitor/
 
 .PHONY: cleanbuild
 cleanbuild:                                 ## Clean the main build
