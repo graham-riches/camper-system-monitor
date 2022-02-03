@@ -1,5 +1,7 @@
 <RCC>
-    <qresource prefix="/qml">        
+    <qresource prefix="/qml"> 
+        <file>battery_icon.png</file>
+        <file>battery_icon_checked.png</file>
         <file>CustomGlow.qml</file>        
         <file>GlowingLabel.qml</file>
         <file>FeatureButton.qml</file>

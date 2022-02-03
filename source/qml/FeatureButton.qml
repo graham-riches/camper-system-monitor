@@ -8,7 +8,7 @@ Button {
     font.pixelSize: fontSizeExtraSmall
     leftPadding: 0
     rightPadding: 0
-    topPadding: 4
+    topPadding: 0
     bottomPadding: 4
     implicitWidth: 80
     implicitHeight: 80
