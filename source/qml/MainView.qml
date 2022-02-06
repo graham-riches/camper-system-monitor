@@ -32,9 +32,9 @@ Page {
         Button {
             width: 80
             height: 80
-            id: settingsIcon
+            id: homeIcon
             checked: true
-            icon.source: checked ? "battery_icon_checked.png" : "battery_icon.png"
+            icon.source: checked ? "home_icon_checked.png" : "home_icon.png"
             icon.color: "transparent"
             icon.width: 64
             icon.height: 64
@@ -49,7 +49,7 @@ Page {
         Button {
             width: 80
             height: 80
-            id: batteryIcon            
+            id: batteryIcon                        
             icon.source: checked ? "battery_icon_checked.png" : "battery_icon.png"
             icon.color: "transparent"
             icon.width: 64
@@ -66,7 +66,7 @@ Page {
             width: 80
             height: 80
             id: waterIcon
-            icon.source: checked ? "battery_icon_checked.png" : "battery_icon.png"
+            icon.source: checked ? "water_icon_checked.png" : "water_icon.png"
             icon.color: "transparent"
             icon.width: 64
             icon.height: 64
@@ -82,7 +82,7 @@ Page {
             width: 80
             height: 80
             id: musicIcon
-            icon.source: checked ? "battery_icon_checked.png" : "battery_icon.png"
+            icon.source: checked ? "music_icon_checked.png" : "music_icon.png"
             icon.color: "transparent"
             icon.width: 64
             icon.height: 64
@@ -97,8 +97,8 @@ Page {
         Button {
             width: 80
             height: 80
-            id: climateIcon
-            icon.source: checked ? "battery_icon_checked.png" : "battery_icon.png"
+            id: temperatureIcon
+            icon.source: checked ? "temperature_icon_checked.png" : "temperature_icon.png"
             icon.color: "transparent"
             icon.width: 64
             icon.height: 64
@@ -123,6 +123,6 @@ Page {
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:1.5}D{i:3}D{i:4}D{i:6}D{i:8}D{i:10}D{i:12}D{i:2}D{i:14}
+    D{i:0;formeditorZoom:1.25}D{i:3}D{i:4}D{i:6}D{i:8}D{i:10}D{i:12}D{i:2}D{i:14}
 }
 ##^##*/

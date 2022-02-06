@@ -2,6 +2,14 @@
     <qresource prefix="/qml"> 
         <file>battery_icon.png</file>
         <file>battery_icon_checked.png</file>
+        <file>home_icon.png</file>
+        <file>home_icon_checked.png</file>
+        <file>water_icon.png</file>
+        <file>water_icon_checked.png</file>
+        <file>music_icon.png</file>
+        <file>music_icon_checked.png</file>
+        <file>temperature_icon.png</file>
+        <file>temperature_icon_checked.png</file>
         <file>CustomGlow.qml</file>        
         <file>GlowingLabel.qml</file>
         <file>FeatureButton.qml</file>
