@@ -6,10 +6,19 @@ ApplicationWindow {
     visible: true
     visibility: "FullScreen"
     width: 800
-    height: 480
+    height: 480    
+    background: Rectangle {
+        color: "Black"
+    }
 
-    Components.MainView {
+    Components.TabMenu {
+        
+    }
 
+    Loader {
+        id: pageLoader
+        source: "MainView.qml"
+        x: 100
     }
 
     MouseArea {

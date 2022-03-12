@@ -13,6 +13,7 @@
         <file>CustomGlow.qml</file>        
         <file>GlowingLabel.qml</file>
         <file>FeatureButton.qml</file>
+        <file>TabMenu.qml</file>
         <file>MainView.qml</file>
         <file>Main.qml</file>
     </qresource>
