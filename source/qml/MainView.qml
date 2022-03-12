@@ -20,9 +20,9 @@ Page {
     Column {
         id: tabMenu
         x: 20
-        y: 36
+        y: 119
         width: 80
-        height: 412
+        height: 329
         spacing: 3
 
         ButtonGroup {
@@ -81,22 +81,6 @@ Page {
         Button {
             width: 80
             height: 80
-            id: musicIcon
-            icon.source: checked ? "music_icon_checked.png" : "music_icon.png"
-            icon.color: "transparent"
-            icon.width: 64
-            icon.height: 64
-            background: Rectangle {
-                color: parent.checked ? colorGlow : "Black"
-                radius: 3
-                border.color: colorGlow
-                border.width: 1
-            }
-        }
-
-        Button {
-            width: 80
-            height: 80
             id: temperatureIcon
             icon.source: checked ? "temperature_icon_checked.png" : "temperature_icon.png"
             icon.color: "transparent"
@@ -123,6 +107,6 @@ Page {
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:1.25}D{i:3}D{i:4}D{i:6}D{i:8}D{i:10}D{i:12}D{i:2}D{i:14}
+    D{i:0;formeditorZoom:1.25}D{i:3}D{i:4}D{i:6}D{i:8}D{i:10}D{i:2}D{i:12}
 }
 ##^##*/
